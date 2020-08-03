@@ -1,13 +1,14 @@
 function countVowels(str) {
-    const vowels = "aeiou";
-    let counter = 0;
+  const vowels = "aeiou";
+  let counter = 0;
 
-    for (let i = 0; i < str.length; i++) {
-        if (vowels.includes(str[i])) {
-            counter++;
-        }
+  for (let elem of str) {
+    if (vowels.includes(elem)) {
+      counter++;
     }
-    return counter;
+  }
+
+  return counter;
 }
 
-console.log(countVowels("racecar"));
+console.log(countVowels("tangerine"))
