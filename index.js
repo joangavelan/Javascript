@@ -1,3 +1,4 @@
+// COUNT VOWELS
 function countVowels(str) {
   const vowels = "aeiou";
   let counter = 0;
@@ -12,3 +13,21 @@ function countVowels(str) {
 }
 
 console.log(countVowels("tangerine"))
+
+
+//LARGER NUMBER 
+function largerNum(a,b) {
+    if(a > b) {
+      return a;
+    }
+  
+    else if (a == b) {
+      return "Numbers are equal";
+    }
+  
+    else {
+      return b;
+    }
+  }
+  
+  console.log(largerNum(1,4));
