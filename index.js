@@ -32,6 +32,7 @@ function largerNum(a,b) {
   
   console.log(largerNum(1,4));
 
+
 //OPPOSITE NUMB
 function opposite(num) {
   return -num;
@@ -59,3 +60,21 @@ function evenOrOdd(num) {
 }
 
 evenOrOdd(5);
+
+
+//GET THE MIDDLE LETTER
+function getMiddle(str) {
+  let mid = Math.floor(str.length / 2);
+
+  if(str.length % 2 === 0) {
+    let next = mid + 2;
+    return str.slice(mid,next);
+  }
+
+  else {
+    return str[mid];
+  }
+}
+
+console.log(getMiddle("dog")); // o
+console.log(getMiddle("test")); // es
