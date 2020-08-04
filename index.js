@@ -31,3 +31,10 @@ function largerNum(a,b) {
   }
   
   console.log(largerNum(1,4));
+
+//OPPOSITE NUMB
+function opposite(num) {
+  return -num;
+}
+
+console.log(opposite(-25));
