@@ -38,3 +38,24 @@ function opposite(num) {
 }
 
 console.log(opposite(-25));
+
+
+//EVEN OR ODD 
+function evenOrOdd(num) {
+  if (num % 2 === 0) {
+   return "Even";
+  }
+
+  else {
+  return "Odd";
+ }
+}
+
+evenOrOdd(4);
+
+//Cleaner Solution
+function evenOrOdd(num) {
+  return num % 2 === 0 ? "Even" : "Odd";
+}
+
+evenOrOdd(5);
