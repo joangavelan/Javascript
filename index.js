@@ -78,3 +78,8 @@ function getMiddle(str) {
 
 console.log(getMiddle("dog")); // o
 console.log(getMiddle("test")); // es
+
+//Get Middle - one line solution
+function getMiddle(str) {
+  return str.length % 2 === 0 ? str[str.length / 2 - 1] + str[str.length / 2] : str[Math.floor(str.length/2)]
+}
