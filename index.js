@@ -83,3 +83,20 @@ console.log(getMiddle("test")); // es
 function getMiddle(str) {
   return str.length % 2 === 0 ? str[str.length / 2 - 1] + str[str.length / 2] : str[Math.floor(str.length/2)]
 }
+
+
+//JADEN CASE
+function capitalize(word) {
+  return word[0].toUpperCase() + word.slice(1).toLowerCase();
+}
+
+function toJadenCase(str) {
+  let words = str.split(" ");
+  let result = [];
+  for(let word of words) {
+    result.push(capitalize(word));
+  }
+  return result.join(" "); 
+}
+
+toJadenCase("How can mirrors be real if our eyes aren't real")
