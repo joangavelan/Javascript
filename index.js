@@ -100,3 +100,26 @@ function toJadenCase(str) {
 }
 
 toJadenCase("How can mirrors be real if our eyes aren't real")
+
+
+//ACCUM FUNCTION
+function cap(letter, num) {
+  let result = [];
+  for (let i = 0; i < num; i++) {
+    result += i === 0 ? letter.toUpperCase() : letter.toLowerCase();
+  }
+  return result;
+}
+
+function accum(str) {
+  let result = [];
+  let letters = str.split("");
+  let counter = 1;
+  for (let letter of letters) {
+    result.push(cap(letter, counter));
+    counter++;
+  }
+  return result.join("-");
+}
+
+accum("abcd");
