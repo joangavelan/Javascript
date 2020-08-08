@@ -123,3 +123,28 @@ function accum(str) {
 }
 
 accum("abcd");
+
+//FIND MAX AND FIND MIN
+function findMax(nums) {
+  let max = nums[0];
+  for(let i = 0; i < nums.length; i++) {
+    if (nums[i] >= max) {
+      max = nums[i];
+    }
+  }
+  return max;
+}
+
+console.log(findMax([3, 4, 5, -23, -1, -54, 33, -22]));
+
+function findMin(nums) {
+  let min = nums[0];
+  for(let i = 0; i < nums.length; i++) {
+    if (nums[i] <= max) {
+      max = nums[i];
+    }
+  }
+  return min;
+}
+
+console.log(findMin([3, 4, 5, -23, -1, -54, 33, -22]));
