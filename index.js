@@ -148,3 +148,21 @@ function findMin(nums) {
 }
 
 console.log(findMin([3, 4, 5, -23, -1, -54, 33, -22]));
+
+//SQUARE EVERY DIGIT
+function sqrPow(num) {
+  return Math.pow(num, 2);
+}
+
+function squareDigits(num) {
+  let nums = num.toString().split("");
+  let sqrNums = [];
+  
+  for (let i = 0; i < nums.length; i++) {
+    sqrNums += Number(sqrPow(nums[i]));
+  }
+
+  return Number(sqrNums);
+}
+
+squareDigits(223);
