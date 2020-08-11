@@ -198,3 +198,33 @@ function XO(str) {
 
 
 XO('ooxx')
+
+
+//LIKES
+function likes(names) {
+
+  if (names == null) {
+    return "No one likes this.";
+  }
+
+  else {
+  let likes = names.split(",");
+  
+  switch(likes.length) {
+    case 1:
+      return `${likes} likes this.`; 
+      break;
+    case 2:
+      return `${likes[0]} and ${likes[1]} like this.`;
+      break;
+    case 3:
+      return `${likes[0]}, ${likes[1]} and ${likes[2]} like this.`;
+      break;
+    default:  
+      return `${likes[0]}, ${likes[1]} and ${likes.length - 2} more like this.`;
+      break;
+    }
+  }
+}
+
+likes("Marco,Vivian,Susan,Rosmery,Astrid");
