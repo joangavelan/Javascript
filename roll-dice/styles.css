@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dice__result img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 5px;
+}
+
+.dice__title {
+    background-color: #eee;
+    color: #111;
+    padding: 1.5rem;
+}
+
+.dice__trigger {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+    border-radius: 4px;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+.dice__trigger:hover {
+    opacity: 0.8;
+}
