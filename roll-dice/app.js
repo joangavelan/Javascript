@@ -11,12 +11,12 @@ function showDice() {
     diceTriggerEl.addEventListener("click", function() {
         let myRandomNumber = getRandomNumber();
         diceImageEl.src = "images/dice" + myRandomNumber + ".png";
+
+        //animation on every click
         diceImageEl.classList.add("animated");
-        
         setTimeout(function () {
             diceImageEl.classList.remove("animated");
         }, 700);
-
     })
 }
 
