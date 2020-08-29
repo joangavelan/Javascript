@@ -6,7 +6,7 @@ const todoItemEls = document.querySelectorAll(".todo__item");
 function addListItem() {
         todoInputEl.addEventListener("keypress", function(event) {
             if(event.keyCode === 13) {
-                let task = storageItem(todoInputEl.value);
+                let task = storeItem(todoInputEl.value);
                 todoListlEl.appendChild(task);
                 todoInputEl.value = '';
            }  
@@ -14,7 +14,7 @@ function addListItem() {
      
 }
 
-function storageItem(value) {
+function storeItem(value) {
     let newListItem = document.createElement("li");
     newListItem.textContent = value;
     newListItem.classList.add("todo__item");
