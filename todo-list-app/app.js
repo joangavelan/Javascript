@@ -5,7 +5,7 @@ const todoItemEls = document.querySelectorAll(".todo__item");
 
 function addListItem() {
         todoInputEl.addEventListener("keypress", function(event) {
-            if(event.keyCode === 13 && todoInputEl) {
+            if(event.keyCode === 13) {
                 let task = storageItem(todoInputEl.value);
                 todoListlEl.appendChild(task);
                 todoInputEl.value = '';
