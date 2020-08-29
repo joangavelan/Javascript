@@ -19,6 +19,10 @@ body {
     border-radius: 5px;
 }
 
+.animated {
+    animation: .7s totalRotation;
+}
+
 .dice__title {
     background-color: #eee;
     color: #111;
@@ -35,4 +39,21 @@ body {
 
 .dice__trigger:hover {
     opacity: 0.8;
+}
+
+/*CUSTOM ANIMATION*/
+@keyframes totalRotation {
+    0% {
+        transform: translateY(170px) rotate(360deg) ;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg) ;
+        opacity: 1;
+    }
 }
