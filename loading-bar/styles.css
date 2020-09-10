@@ -14,3 +14,22 @@
     height: 3px;
     background-color: red;
 }
+
+.buttons-container {
+    width: 100%;
+    height: calc(100vh - 3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 35px;
+    margin: 0 3rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(24, 24, 24);
+    border: 1px solid red;
+}
+
