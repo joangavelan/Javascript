@@ -12,7 +12,7 @@ button40.addEventListener("click", function() {
             width++;
             loadingBarItem.style.width = width + '%';
         }
-    }, 15)
+    }, 10)
 });
 
 button60.addEventListener("click", function() {
@@ -24,7 +24,7 @@ button60.addEventListener("click", function() {
             width++;
             loadingBarItem.style.width = width + '%';
         }
-    }, 15)
+    }, 10)
 });
 
 button100.addEventListener("click", function() {
@@ -36,7 +36,7 @@ button100.addEventListener("click", function() {
             width++;
             loadingBarItem.style.width = width + '%';
         }
-    }, 15)
+    }, 10)
 });
 
 
