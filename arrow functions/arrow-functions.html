@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <button>submit</button>
+    <script>
+        //function declaration
+        function add() {
+            console.log(2+2);
+        }
+        //function expression
+        let add1 = function() {
+            console.log(2+5);
+        } 
+        //anonymous functions 
+        document.querySelector("button").addEventListener("click", function() {
+            alert("You clicked!!!");
+        })
+
+        let addNew = (a, b) => {
+            console.log(a + b);
+        }
+
+        //the _ can replace the () when there are no parameters to pass
+        //the () is not neccesary when there is only one parameter needed to be passed. Example:
+        let oneParameter = x => {
+            console.log("There is only one argument here and it's the: " + x);
+        }
+
+        //when there is only one line of code in the block, the {} is not neccesary, this is called implicit return. Example:
+        let oneLine = one => console.log("There ins only one line of code here");
+
+        let multiply = (a, b) => a * b;
+
+        console.log(multiply(5, 2));
+    </script>
+</body>
+</html>
