@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions and "this"</title>
+</head>
+<body>
+    <script>
+        // console.log(this);
+
+        const joan = {
+            fullName: "Joan Gavelán",
+            age: 23,
+            professionStatus: "Student",
+            upgradeProfession: function() {
+                this.professionStatus = "Software Developer";
+            }
+        }
+
+        console.log(joan.professionStatus);
+        joan.upgradeProfession();
+        console.log(joan.professionStatus);
+    </script>   
+</body>
+</html>
