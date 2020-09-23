@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Function Arguments</title>
+</head>
+<body>
+    <script>
+
+        // es5
+        // function displayEducation(college) {
+        //     // if(!college) {
+        //     //     college = "No college degree information provided";
+        //     // }
+        //     college = !college ? "No college degree information provided" : college;
+        //     console.log(college);
+        // }
+
+
+        //es6
+        //default arguments  
+        // function displayEducation(name = "No name provided", college = "No college degree information provided") {
+        //     console.log(name + " studied in " + college)
+        // }
+
+        // displayEducation("Joan", "UPN");
+
+        //getting it better
+        function displayEducation(name, college) {
+            let message = name && college ? name + " studied in " + college : "No information provided;"
+
+            console.log(message);
+        }
+
+        displayEducation("Joan", "UPN");
+    </script>
+</body>
+</html>
