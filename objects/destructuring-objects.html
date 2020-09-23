@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Objects</title>
+</head>
+<body>
+    <script>
+        const joan = {
+            fullName: "Joan Gavelán",
+            age: 23,
+            hobbies: ["movies", "videogames", "basketball"],
+            address: {
+                main: "21 de Abril",
+                apt: "A-2",
+                zip: 78345
+            }
+
+        }
+        
+        // const {fullName, age, hobbies, address} = joan;
+        // console.log(fullName);
+        // console.log(age);
+        // console.log(hobbies);
+        // console.log(address);
+
+        const { fullName: name, age : ageVar} = joan;
+
+        console.log(name,ageVar);
+
+    </script>
+</body>
+</html>
