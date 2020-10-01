@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literals in es6</title>
+</head>
+<body>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name"><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" style="margin: 7px;"><br>
+
+    <button>Get it</button>
+
+
+    <script>
+
+        function displayInfo() {
+            const nameEl = document.querySelector("#name");
+            const emailEl = document.querySelector("#email");
+            const buttonEl = document.querySelector("button");
+
+            buttonEl.addEventListener("click", function() {
+                let name = nameEl.value;
+                let email = emailEl.value;
+
+                let person = {name, email};
+
+            console.log(person);
+            }) 
+        }
+
+        displayInfo();
+        //
+        let a = "alpha";
+        let b = "beta";
+        let c = "charlie";
+
+        let human = {
+            a,
+            b,
+            c,
+            d: "hard coded value",
+            talk() {
+                console.log("I'm talking");
+            },
+            walk() {
+                console.log("I'm walking now...");
+            }
+        }
+
+        console.log(human);
+
+        human.talk();
+        human.walk();
+    </script>
+</body>
+</html>
