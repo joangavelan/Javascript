@@ -8,15 +8,25 @@
 <body>
     
     <script>
-        function adder(...values) {
-            total = 0;
-            for (let elem of values) {
-                total += elem;
-            }
-            console.log(total);
-        }
+        // function adder(...values) {
+        //     total = 0;
+        //     for (let elem of values) {
+        //         total += elem;
+        //     }
+        //     console.log(total);
+        // }
 
-        adder(2,3);    
+        // adder(2,3);
+
+        let nums = [1, 2, 3, 4, 5, 6, 7, 8];
+        let total = [];
+
+        total.push(2);
+        total.push(2, 3, 4);
+        total.push(...nums);
+        
+        console.log(total);
+
     </script>
 </body>
 </html>
