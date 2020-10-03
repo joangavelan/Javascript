@@ -17,9 +17,9 @@ let car1 = new Car('Lambo', 'Aventador'); //instance
 let car2 = new Car('Toyota', 'Camry');
 let car3 = new Car('Nissan', 'Sentra');
 
-console.log(car3.drive());
+// console.log(car3.drive());
 
-console.log(car3);
+// console.log(car3);
 
 // console.log(car1.stats());
 // console.log(car2.stats());
