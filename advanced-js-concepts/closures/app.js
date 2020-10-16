@@ -87,3 +87,6 @@ console.log(mine.getName())
 
 mine.setName("Joan");
 console.log(mine.getName());
+
+mine.setName("newName");
+console.log(mine.getName());
