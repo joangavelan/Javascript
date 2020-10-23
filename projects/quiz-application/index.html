@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="app">
         <div class="container">
             <div class="jabquiz">
                 <div class="jabquiz__question-box">
-                    <h1 class="jabquiz__question">Who is the first president of the United States</h1>
+                    <h1 class="jabquiz__question">Who is the first president of the United States?</h1>
                     <p class="jabquiz__tracker">1 of 7</p>
                     <div class="progress">
-                        <div class="progress_inner"></div>
+                        <div class="progress__inner"></div>
                     </div>
                     <p class="jabquiz__tagline">Pick an option below!</p>
                 </div>
                 <div class="jabquiz__choices-box">
-                    <ul class="jabqquiz__choices">
+                    <ul class="jabquiz__choices">
                         <!-- Dynamically content with Javascript --->
                         <li class="jabquiz__choice">
-                            <input type="radio" id="choice0" name="choice" class="jabquiz__input" checked>
+                            <input type="radio" id="choice0" name="choice" class="jabquiz__input">
                             <label for="choice0" class="jabquiz__label">
                                 <i></i>
-                                Martin Luther King
+                                George Washington
                             </label>
                         </li>
 
@@ -54,12 +55,13 @@
                     </ul>
                 </div>
 
-                <div class="jabquiz__foter">
+                <div class="jabquiz__footer">
                     <button class="button button--bordered next">Next</button>
                     <button class="button button--bordered restart">Restart</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="js/app.js" type="module"></script>
 </body>
 </html>
